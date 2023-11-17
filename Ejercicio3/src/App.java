@@ -12,6 +12,10 @@ public class App {
         String Nombre = scan.nextLine();
         alumno.getNombre();
         System.out.println("Ingrese la edad: ");
+        while (!scan.hasNextInt()) {
+            System.out.println("Intente denuevo ");
+            scan.next();
+        }
         int edad = scan.nextInt();
         alumno.getEdad();
         do {
