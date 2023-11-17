@@ -35,7 +35,7 @@ public class profesor extends estudiante{
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-    public void setclaseImpart(int claseImpart) {
+    public void setclaseImpart(String claseImpart) {
         this.claseImpart = claseImpart;
     }  
     
