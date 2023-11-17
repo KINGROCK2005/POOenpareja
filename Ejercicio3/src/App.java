@@ -28,6 +28,21 @@ public class App {
             alumno.getCalificacion();;
 
         } while (calificacion < 0 || calificacion >= 10);
-        
+
+        profesor maestro = new maestro();
+        System.out.println("Ingrese los datos del profesor: ");
+        System.out.print("Ingrese el sexo: ");
+        String sexo = scan.nextLine();
+        maestro.getSexo();
+        System.out.print("Ingrese el nombre: ");
+        String Nombre = scan.nextLine();
+        maestro.getNombre();
+        System.out.println("Ingrese la edad: ");
+        while (!scan.hasNextInt()) {
+            System.out.println("Intente denuevo ");
+            scan.next();
+            int edad = scan.nextInt();
+            alumno.getEdad();
+        }
     }
 }
