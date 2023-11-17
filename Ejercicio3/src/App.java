@@ -14,18 +14,16 @@ public class App {
         System.out.println("Ingrese la edad: ");
         int edad = scan.nextInt();
         alumno.getEdad();
-        
         do {
-            System.out.println("Ingrese la calificacion: ");
-            }while (!scan.hasNextInt() && calificacion <= 10);
-                System.out.println("Entrada no válida. Por favor, ingrese un número entero.");
-                scan.next(); 
-
+            System.out.print("Ingrese la calificación: ");
+            while (!scan.hasNextInt()) {
+                System.out.println("Por favor, ingrese un número válido.");
+               scan.next();
+            }
             int calificacion = scan.nextInt();
-            alumno.getCalificacion();
+            alumno.getCalificacion();;
 
-
-        System.out.println(calificacion);
+        } while (calificacion < 0 || calificacion >= 10);
         
     }
 }
